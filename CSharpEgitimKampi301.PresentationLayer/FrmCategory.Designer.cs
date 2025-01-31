@@ -62,7 +62,7 @@
             // 
             // btnList
             // 
-            this.btnList.Location = new System.Drawing.Point(116, 127);
+            this.btnList.Location = new System.Drawing.Point(116, 126);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(129, 34);
             this.btnList.TabIndex = 2;
@@ -75,7 +75,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(273, 21);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(558, 308);
+            this.dataGridView1.Size = new System.Drawing.Size(558, 307);
             this.dataGridView1.TabIndex = 3;
             // 
             // txtCategoryName
@@ -127,39 +127,43 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(116, 167);
+            this.btnAdd.Location = new System.Drawing.Point(116, 166);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(129, 34);
             this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(116, 208);
+            this.btnDelete.Location = new System.Drawing.Point(116, 207);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(129, 34);
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnGetById
             // 
-            this.btnGetById.Location = new System.Drawing.Point(116, 295);
+            this.btnGetById.Location = new System.Drawing.Point(116, 294);
             this.btnGetById.Name = "btnGetById";
             this.btnGetById.Size = new System.Drawing.Size(129, 34);
             this.btnGetById.TabIndex = 11;
             this.btnGetById.Text = "ID\'ye Göre Getir";
             this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(116, 248);
+            this.btnUpdate.Location = new System.Drawing.Point(116, 247);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(129, 34);
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // FrmCategory
             // 
@@ -181,6 +185,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCategory";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
